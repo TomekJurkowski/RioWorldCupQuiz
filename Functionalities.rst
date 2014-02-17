@@ -1,5 +1,5 @@
 Main menu:
-'Play' - w³¹cz android:keepScreenOn
+'Play' - android:keepScreenOn !!!!!!!!!
 'Scoreboard'
 'Instructions'
 'Do not read me!' - inside this a short note asking to 'Rate Rio' on PlayStore and to recommend to fellow football fans

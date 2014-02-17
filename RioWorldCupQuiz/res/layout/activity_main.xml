@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LimeGreen"
+    tools:context=".MainMenuActivity" >
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        
+	    <TextView
+	        android:id="@+id/fullscreenContent"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/app_title"
+	        android:textColor="@color/Navy"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+	        android:textSize="50sp"
+	        android:textStyle="bold" />
+	    
+	    <Button
+	        android:id="@+id/btnPlay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+	        android:background="@android:color/transparent"
+	        android:text="@string/play_button" />
+	    
+	    <Button
+	        android:id="@+id/btnScoreboard"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+	        android:background="@android:color/transparent"
+	        android:text="@string/scoreboard_button" />
+	    
+	    <Button
+	        android:id="@+id/btnInstructions"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+	        android:background="@android:color/transparent"
+	        android:text="@string/instructions_button" />
+	    
+	    <Button
+	        android:id="@+id/btnDoNotReadMe"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+	        android:background="@android:color/transparent"
+	        android:text="@string/dont_click_button" />
+	    
+   	    <Button
+	        android:id="@+id/btnExit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+	        android:background="@android:color/transparent"
+	        android:text="@string/exit" />  
+    </LinearLayout>
+        
+    <ImageButton 
+        android:id="@+id/btnUnmute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/unmute_button"
+        android:background="@android:color/transparent"
+        android:src="@drawable/volume_mute" />
+    <ImageButton 
+        android:id="@+id/btnMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/mute_button"
+        android:background="@android:color/transparent"
+        android:src="@drawable/volume" />
+    
+</RelativeLayout>

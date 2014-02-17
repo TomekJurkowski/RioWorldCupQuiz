@@ -1,0 +1,5 @@
+<resources>
+    <style name="NoActionBar" parent="@android:style/Theme">
+        <!-- Inherits the default theme for pre-HC (no action bar) -->
+    </style>
+</resources>

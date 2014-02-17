@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rio World Cup Quiz</string>
+    <string name="app_title">Rio World Cup\nQuiz</string>    
+    <string name="play_button">Play</string>
+    <string name="scoreboard_button">Scoreboard</string>
+	<string name="instructions_button">Instructions</string>
+    <string name="dont_click_button">Don\'t Click Me!</string>
+    <string name="mute_button">Mute</string>
+	<string name="unmute_button">Unmute</string>
+	<string name="exit">Exit</string>
+	
+	<string name="back">Back to Menu</string>
+	<string name="instructions_title">Quick How-to</string>
+	
+</resources>
