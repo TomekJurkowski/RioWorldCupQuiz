@@ -17,7 +17,10 @@ public class MainActivity extends Activity {
     private static final String PREFERENCES_NAME = "RioPreferencesFile";
     private static final String SOUND_PREFERENCE = "SoundPreference";
 
+    private Button buttonPlay;
+    private Button buttonScoreboard;
 	private Button buttonInstructions;
+    private Button buttonRateMe;
 	private Button buttonExit;
 	
     private ImageButton buttonMute;
@@ -29,13 +32,49 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        buttonInstructions = (Button) findViewById(R.id.btnInstructions);
+
+        prepareMenuButtons();
+        prepareMusicButtons();
+    }
+
+    // Function setting proper listeners for Menu buttons.
+    private void prepareMenuButtons() {
+        buttonPlay = (Button) findViewById(R.id.btnPlay);
+        buttonPlay.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, GameActivity.class);
+			    startActivity(intent);			
+			}
+		});
+
+    	buttonScoreboard = (Button) findViewById(R.id.btnScoreboard);
+        buttonScoreboard.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, ScoreboardActivity.class);
+			    startActivity(intent);			
+			}
+		});
+
+    	buttonInstructions = (Button) findViewById(R.id.btnInstructions);
         buttonInstructions.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, InstructionsActivity.class);
+			    startActivity(intent);			
+			}
+		});
+        
+    	buttonRateMe = (Button) findViewById(R.id.btnRateMe);
+        buttonRateMe.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, RateMeActivity.class);
 			    startActivity(intent);			
 			}
 		});
@@ -49,36 +88,38 @@ public class MainActivity extends Activity {
 				finish();
         	}
         });
- 	
- 		// Setting the listener for 'Mute' button
-         buttonMute = (ImageButton) findViewById(R.id.btnMute);
-         buttonMute.setOnClickListener(new OnClickListener() {
+    }
 
-        	 @Override
-             public void onClick(View v) {
-        		 MusicManager.mute();
-        		 buttonMute.setVisibility(View.GONE);
-                 buttonUnmute.setVisibility(View.VISIBLE);
-                 isMuted = true;
-                 saveSoundPreferences();
-             }
-         });
-             
-         // Setting the listener for 'Unmute' button
-         buttonUnmute = (ImageButton) findViewById(R.id.btnUnmute);
-         buttonUnmute.setOnClickListener(new OnClickListener() {
+    // Function responsible for setting proper listeners for the
+    // 'Mute' and 'Unmute' buttons.
+    private void prepareMusicButtons() {
+        buttonMute = (ImageButton) findViewById(R.id.btnMute);
+        buttonMute.setOnClickListener(new OnClickListener() {
 
-        	 @Override
+       	 @Override
+            public void onClick(View v) {
+       		 MusicManager.mute();
+       		 buttonMute.setVisibility(View.GONE);
+                buttonUnmute.setVisibility(View.VISIBLE);
+                isMuted = true;
+                saveSoundPreferences();
+            }
+        });
+            
+        buttonUnmute = (ImageButton) findViewById(R.id.btnUnmute);
+        buttonUnmute.setOnClickListener(new OnClickListener() {
+
+       	 @Override
 		 	 public void onClick(View v) {
-        		 MusicManager.unmute();
+       		 MusicManager.unmute();
 				 buttonUnmute.setVisibility(View.GONE);
 				 buttonMute.setVisibility(View.VISIBLE);
 				 isMuted = false;
 				 saveSoundPreferences();
 			 }
-         });
+        });
     }
-
+    
     @Override
     protected void onResume() {
     	super.onResume();

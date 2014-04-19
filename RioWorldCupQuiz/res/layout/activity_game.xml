@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@color/LimeGreen" >
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkCyan" >
+        <ImageView
+            android:id="@+id/appIcon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="16dp"
+	        android:contentDescription="@string/app_icon"
+	        android:src="@drawable/ic_launcher" />
+	    <ImageButton 
+        	android:id="@+id/btnPause"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="16dp"
+	        android:contentDescription="@string/pause_button"
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/pause" />
+    </RelativeLayout>
+
+   	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	   	<Button
+			android:id="@+id/btnA"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:background="@color/DarkCyan" />
+		<Button
+			android:id="@+id/btnB"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:background="@color/DarkCyan" />   	
+   	</LinearLayout>
+   	
+   	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	   	<Button
+			android:id="@+id/btnC"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:background="@color/DarkCyan" />
+		<Button
+			android:id="@+id/btnD"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:background="@color/DarkCyan" />
+   	</LinearLayout> 
+   	
+</LinearLayout>

@@ -12,7 +12,6 @@ public class InstructionsActivity extends Activity {
 
 	private Button buttonBack;
 	
-	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);        

@@ -12,6 +12,11 @@
 	<string name="exit">Exit</string>
 	
 	<string name="back">Back to Menu</string>
+	<string name="game_title">Let\'s play!</string>
+	<string name="scoreboard_title">Scoreboard</string>
 	<string name="instructions_title">Quick How-to</string>
+	<string name="rate_me_title">I new you would click me!</string>
 	
+	<string name="app_icon">Rio</string>
+	<string name="pause_button">Pause</string>
 </resources>
