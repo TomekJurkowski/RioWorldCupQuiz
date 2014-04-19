@@ -170,24 +170,29 @@ public final class R {
     }
     public static final class id {
         public static final int appIcon=0x7f090000;
-        public static final int btnA=0x7f090002;
-        public static final int btnB=0x7f090003;
-        public static final int btnBack=0x7f090007;
-        public static final int btnC=0x7f090004;
-        public static final int btnD=0x7f090005;
-        public static final int btnExit=0x7f09000e;
-        public static final int btnInstructions=0x7f09000c;
-        public static final int btnMute=0x7f090010;
+        public static final int btnA=0x7f090007;
+        public static final int btnAskExpert=0x7f090004;
+        public static final int btnAskFans=0x7f090005;
+        public static final int btnB=0x7f090008;
+        public static final int btnBack=0x7f09000c;
+        public static final int btnC=0x7f090009;
+        public static final int btnD=0x7f09000a;
+        public static final int btnExit=0x7f090013;
+        public static final int btnInstructions=0x7f090011;
+        public static final int btnMute=0x7f090015;
         public static final int btnPause=0x7f090001;
-        public static final int btnPlay=0x7f09000a;
-        public static final int btnRateMe=0x7f09000d;
-        public static final int btnScoreboard=0x7f09000b;
-        public static final int btnUnmute=0x7f09000f;
-        public static final int fullscreenContent=0x7f090009;
-        public static final int howToTitle=0x7f090006;
-        public static final int menuLayout=0x7f090008;
-        public static final int rateMeTitle=0x7f090011;
-        public static final int scoreboardTitle=0x7f090012;
+        public static final int btnPlay=0x7f09000f;
+        public static final int btnRateMe=0x7f090012;
+        public static final int btnRedCard=0x7f090003;
+        public static final int btnScoreboard=0x7f090010;
+        public static final int btnUnmute=0x7f090014;
+        public static final int btnYellowCard=0x7f090002;
+        public static final int fullscreenContent=0x7f09000e;
+        public static final int howToTitle=0x7f09000b;
+        public static final int menuLayout=0x7f09000d;
+        public static final int question=0x7f090006;
+        public static final int rateMeTitle=0x7f090016;
+        public static final int scoreboardTitle=0x7f090017;
     }
     public static final class layout {
         public static final int activity_game=0x7f030000;
@@ -212,6 +217,8 @@ public final class R {
         public static final int app_icon=0x7f07000e;
         public static final int app_name=0x7f070000;
         public static final int app_title=0x7f070001;
+        public static final int ask_expert_button=0x7f070012;
+        public static final int ask_fans_button=0x7f070013;
         public static final int back=0x7f070009;
         public static final int dont_click_button=0x7f070005;
         public static final int exit=0x7f070008;
@@ -222,9 +229,11 @@ public final class R {
         public static final int pause_button=0x7f07000f;
         public static final int play_button=0x7f070002;
         public static final int rate_me_title=0x7f07000d;
+        public static final int red_card_button=0x7f070011;
         public static final int scoreboard_button=0x7f070003;
         public static final int scoreboard_title=0x7f07000b;
         public static final int unmute_button=0x7f070007;
+        public static final int yellow_card_button=0x7f070010;
     }
     public static final class style {
         /** 

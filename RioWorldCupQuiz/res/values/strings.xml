@@ -19,4 +19,10 @@
 	
 	<string name="app_icon">Rio</string>
 	<string name="pause_button">Pause</string>
+	
+	<string name="yellow_card_button">Yellow Card</string>
+	<string name="red_card_button">Red Card</string>
+	<string name="ask_expert_button">Ask Expert</string>
+	<string name="ask_fans_button">Ask Football Fans</string>
+		
 </resources>
