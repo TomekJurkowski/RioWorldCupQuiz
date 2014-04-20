@@ -19,10 +19,16 @@
 	
 	<string name="app_icon">Rio</string>
 	<string name="pause_button">Pause</string>
+    <string name="timerVal">00</string>	
 	
 	<string name="yellow_card_button">Yellow Card</string>
 	<string name="red_card_button">Red Card</string>
 	<string name="ask_expert_button">Ask Expert</string>
 	<string name="ask_fans_button">Ask Football Fans</string>
+	
+	<string name="pause_popup">Pause</string>
+	<string name="pause_popup_resume">Resume</string>
+	<string name="pause_popup_restart">Restart</string>
+	<string name="pause_popup_exit">Exit</string>
 		
 </resources>
